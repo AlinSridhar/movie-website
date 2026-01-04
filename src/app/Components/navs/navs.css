@@ -1,0 +1,29 @@
+.head{
+    padding:30px;
+    color: #10F5AB;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.btn{
+    border: 1px solid #10F5AB;
+    background-color: inherit;
+    color: #10F5AB;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    height:50px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.btn:hover{
+    background-color: #10F5AB;
+    color: rgb(20, 28, 51);
+    transition: 0.4s;
+    letter-spacing: 3px;
+}

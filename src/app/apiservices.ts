@@ -14,4 +14,8 @@ export class Apiservices {
 
     return this.http.get(`${this.apiUrl}/movie/popular`, { params });
   }
+  getCurrentlyRunningMovies() {
+    const params = new HttpParams().set('api_key', this.apiKey);
+    return this.http.get(`${this.apiUrl}/movie/now_playing`, { params });
+  }
 }
