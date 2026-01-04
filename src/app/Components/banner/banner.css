@@ -1,0 +1,32 @@
+.contain{
+    width:100%;
+    background:url('/assets/banner.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    height: 400px;
+}
+.head{
+    color:#10F5A8;
+    font-size: 50px;
+}
+.sub {
+    color:#B29836;
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    background-color: #10F5A8;
+    border: none;
+    margin-top:100px;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.btn:hover{
+    background-color: rgba(0,0,0,0);
+    color:#10F5A8;
+    border: 2px solid #10F5A8;
+}

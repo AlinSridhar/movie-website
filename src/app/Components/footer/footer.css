@@ -1,0 +1,26 @@
+.contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(13, 31, 64);
+    color:#10F5A8;
+    text-align: center;
+}
+.links{
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.links li a{
+    text-decoration: none;
+    color: #10F5A8;
+    font-size: 16px;
+}
+.links li a:hover{
+    text-decoration: underline;
+    transition: 0.2s;
+}
