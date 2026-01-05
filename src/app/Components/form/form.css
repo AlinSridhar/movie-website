@@ -1,0 +1,48 @@
+.head{
+    padding:30px 30px 0 30px;
+    color: #10F5AB;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+.formdiv{
+    padding:30px;
+}
+.formdiv form{
+    display: flex;
+    flex-direction: column;
+}
+.formdiv form input{
+    width:80%;
+    background-color: rgb(13, 31, 64);
+    color: #10F5A8;
+    border: 2px solid rgb(8, 42, 106);;
+    margin:20px 0px;
+    height:50px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+.formdiv form input:focus{
+    outline: none;
+    border: 2px solid #10F5A8;
+}
+.formdiv form button{
+    width:30%;
+    height:50px;
+    background-color: inherit;
+    color: #10F5A8;
+    border: 2px solid #10F5A8;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.formdiv form button:hover{
+    background-color: #10F5A8;
+    color: rgb(13, 31, 64);
+    transition: 0.3s;
+}
+.formdiv form input::placeholder{
+    color: #10F5A8;
+}
+.formdiv form input:focus::placeholder{
+    opacity: 0.2;
+}

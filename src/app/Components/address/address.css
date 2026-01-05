@@ -1,0 +1,38 @@
+.head{
+    padding:30px;
+    color: #10F5AB;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.contain{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+   
+    gap: 50px;
+}
+.map{
+    flex:1;
+    max-width: 600px;
+}
+.address{
+    flex:1;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #10F5AB;
+    border: #10F5AB 2px solid;
+    height: fit-content;
+    width: fit-content;
+    padding:20px;
+    max-width: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.address:hover{
+    color: rgb(20, 28, 51);
+    background-color: #10F5AB;
+    transition: 0.3s ease-in;
+}
