@@ -15,7 +15,6 @@
 }
 .moviecard{
     border-radius: 10px;
-    flex-shrink: 0;
 }
 .moviecard img{
     border-radius: 10px;
@@ -26,12 +25,4 @@
     text-decoration: underline;
     letter-spacing: 2px;
     text-align: center;
-}
-.cardcontainer{
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding-left: 30px;
-}
-.cardcontainer::-webkit-scrollbar {
-    display: none;
 }

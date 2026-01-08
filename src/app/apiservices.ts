@@ -18,4 +18,8 @@ export class Apiservices {
     const params = new HttpParams().set('api_key', this.apiKey);
     return this.http.get(`${this.apiUrl}/movie/now_playing`, { params });
   }
+  getTopRatedMovies(pgno:number) {
+    const params = new HttpParams().set('api_key', this.apiKey).set('page', pgno.toString());
+    return this.http.get(`${this.apiUrl}/movie/top_rated`, { params });
+  }
 }

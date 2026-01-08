@@ -13,12 +13,7 @@ export class Movies implements OnInit {
 
   ngOnInit(): void {
     this.apiService.getPopularMovies().subscribe((data:any) => {
-      this.movies[0] = data.results[0];
-      this.movies[1] = data.results[1];
-      this.movies[2] = data.results[2];
-      this.movies[3] = data.results[3];
-      this.movies[4] = data.results[4];
-      // this.movies[5] = data.results[5];
+      this.movies = data.results;
       this.cdr.detectChanges();
     });
   }
