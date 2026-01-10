@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-navs',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './navs.html',
   styleUrl: './navs.css',
 })
