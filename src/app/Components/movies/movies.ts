@@ -1,5 +1,6 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Apiservices } from '../../apiservices';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-movies',
@@ -8,7 +9,7 @@ import { Apiservices } from '../../apiservices';
   styleUrl: './movies.css',
 })
 export class Movies implements OnInit {
-  constructor(private apiService: Apiservices,private cdr:ChangeDetectorRef) {}
+  constructor(private apiService: Apiservices,private cdr:ChangeDetectorRef,private route:Router) {}
   movies:any[] =[];
 
   ngOnInit(): void {

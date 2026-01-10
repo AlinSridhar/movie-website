@@ -3,6 +3,7 @@ import { Home } from './pages/home/home';
 import { Contact } from './pages/contact/contact';
 import { About } from './pages/about/about';
 import { MovieList } from './Components/movie-list/movie-list';
+import { MovieDetails } from './pages/movie-details/movie-details';
 
 export const routes: Routes = [
     {
@@ -18,7 +19,12 @@ export const routes: Routes = [
         component: About
     },
     {
+        path: 'movies/:id',
+        component: MovieDetails
+    },
+    {
         path:'movies',
         component: MovieList
-    }
+    },
+    
 ];
