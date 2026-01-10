@@ -1,5 +1,6 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Apiservices } from '../../apiservices';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-currenty-running',
@@ -8,7 +9,7 @@ import { Apiservices } from '../../apiservices';
   styleUrl: './currenty-running.css',
 })
 export class CurrentyRunning implements OnInit {
-  constructor(private apiService: Apiservices,private cdr:ChangeDetectorRef) {}
+  constructor(private apiService: Apiservices,private cdr:ChangeDetectorRef,private route:Router) {}
   movies:any[] =[];
 
   ngOnInit(): void {
@@ -16,5 +17,8 @@ export class CurrentyRunning implements OnInit {
       this.movies = data.results;
       this.cdr.detectChanges();
     });
+  }
+  viewmoviedetails(movie:any){
+    this.route.navigate(['/movies',movie.id],{state:{movie}});
   }
 }

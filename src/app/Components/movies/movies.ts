@@ -18,4 +18,7 @@ export class Movies implements OnInit {
       this.cdr.detectChanges();
     });
   }
+  viewmoviedetails(movie:any){
+    this.route.navigate(['/movies',movie.id],{state:{movie}});
+  }
 }

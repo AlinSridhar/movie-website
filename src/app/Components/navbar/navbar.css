@@ -23,3 +23,7 @@ h1{
     text-decoration: underline;
     transition: 0.2s;
 }
+.nav li a{
+    cursor: pointer;
+    
+}
