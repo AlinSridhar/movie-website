@@ -1,14 +1,19 @@
-<div class="d-flex p-4">
-    <div>
+<div class="d-flex p-4 contain flex-wrap align-items-center justify-content-center">
+    <div class="left">
         <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="">
     </div>
-    <div class="m-4">
-        <h1 class="fs-1">{{movie.title}}</h1>
+    <div class="m-4 right">
+        <h1 class="fs-1">{{movie.title}} ({{movie.release_date.slice(0,4)}})</h1>
         <p class="">{{movie.overview}}</p>
-        <p>{{movie.release_date}}</p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <p>Release date : {{movie.release_date}}</p>
+        <div class="d-flex gap-2 flex-wrap mb-4">
+            @for(i of genres; track $index)
+            {
+                <div class="genre">{{i}}</div>
+            }
+        </div>
+        <p>Popularity: {{movie.popularity}}</p>
+        <p>Vote Average: {{movie.vote_average}} ({{movie.vote_count}} votes)</p>
 
     </div>
 </div>

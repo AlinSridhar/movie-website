@@ -1,0 +1,22 @@
+.contain{
+    color:#10F5A8;
+
+}
+.genre{
+    background-color: #10F5A8;
+    color:  rgb(13, 31, 64);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.genre:hover{
+    background-color: rgb(13, 31, 64);
+    border: #10F5A8 solid 1px;
+    color: #10F5A8;
+    transition: 0.3s;
+}
+.left{
+    flex:3;
+}
+.right{
+    flex:7;
+}

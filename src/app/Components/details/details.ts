@@ -1,5 +1,6 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Apiservices } from '../../apiservices';
 
 @Component({
   selector: 'app-details',
@@ -9,7 +10,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class Details implements OnInit {
   movie:any;
-  constructor(private route:ActivatedRoute,private cdr:ChangeDetectorRef) {}
+  genres:any[]=[];
+
+  constructor(private route:ActivatedRoute,private cdr:ChangeDetectorRef,private apiService:Apiservices) {}
   ngOnInit(): void {
     this.route.queryParams.subscribe(()=>{
       console.log(history.state.movie);
@@ -17,7 +20,15 @@ export class Details implements OnInit {
         this.movie = history.state.movie;
       }
     })
+    for(let i of this.movie.genre_ids){
+      this.genres.push(this.getGenreName(i));
+    }
     this.cdr.detectChanges();
   }
-
+  getGenreName(id:number){
+    console.log(this.apiService.getGenre(id));
+    return this.apiService.getGenre(id);
+    
+    this.cdr.detectChanges();
+  }
 }

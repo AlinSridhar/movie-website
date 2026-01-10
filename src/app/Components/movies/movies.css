@@ -19,6 +19,9 @@
 }
 .moviecard img{
     border-radius: 10px;
+    width:100%;
+    height: auto;
+    object-fit: cover;
 }
 .head{
     padding:30px;
@@ -34,4 +37,6 @@
 }
 .cardcontainer::-webkit-scrollbar {
     display: none;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
