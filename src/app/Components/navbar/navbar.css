@@ -22,8 +22,9 @@ h1{
 .nav li a:hover{
     text-decoration: underline;
     transition: 0.2s;
+    text-underline-offset: 10px;
+    text-decoration-thickness:3px;
 }
 .nav li a{
     cursor: pointer;
-    
 }

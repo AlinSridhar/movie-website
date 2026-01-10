@@ -29,6 +29,8 @@
     text-decoration: underline;
     letter-spacing: 2px;
     text-align: center;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
 }
 .cardcontainer{
     overflow-x: auto;

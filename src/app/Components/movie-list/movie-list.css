@@ -25,4 +25,23 @@
     text-decoration: underline;
     letter-spacing: 2px;
     text-align: center;
+    text-underline-offset: 8px;
+}
+.btns button{
+    background-color: #10F5AB;
+    border:none;
+    padding:10px 20px;
+    border-radius: 5px;
+    color: rgb(13, 31, 64);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    height: 50px;
+    letter-spacing: 2px;
+}
+.btns button:hover{
+    background-color: inherit;
+    border: #10F5AB 2px solid;
+    color:#10F5AB;
 }
